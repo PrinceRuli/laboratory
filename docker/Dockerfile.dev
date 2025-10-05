@@ -1,0 +1,20 @@
+# Gunakan image Node versi LTS
+FROM node:18
+
+# Set direktori kerja di dalam container
+WORKDIR /app
+
+# Salin file konfigurasi terlebih dahulu
+COPY package*.json ./
+
+# Install dependencies (gunakan clean install)
+RUN npm ci
+
+# Salin semua file proyek ke dalam container
+COPY . .
+
+# Buka port default Vite
+EXPOSE 5173
+
+# Jalankan Vite dev server dengan host 0.0.0.0 agar bisa diakses dari luar container
+CMD ["npm", "run", "dev", "--", "--host", "0.0.0.0"]
