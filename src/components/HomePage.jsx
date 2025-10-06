@@ -105,7 +105,7 @@ const HomePage = () => {
           {/* Right Image */}
           <div className="md:w-1/2 flex items-center justify-center p-6 sm:p-8 md:p-10 lg:p-12">
             <img
-              src="/lab.png"
+              src="/lab.webp"
               alt="lab"
               loading="lazy"
               className="object-cover max-w-full h-auto rounded-2xl shadow-2xl"
