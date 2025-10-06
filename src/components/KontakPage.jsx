@@ -22,9 +22,11 @@ const KontakPage = () => {
 
   return (
     <div className="bg-gray-50 min-h-screen flex flex-col overflow-x-hidden">
+
       {/* Konten Utama */}
       <div className="max-w-6xl w-full mx-auto px-6 py-12 grid grid-cols-1 md:grid-cols-2 gap-12">
-        {/* Kiri: Judul + kalimat pendukung */}
+
+        {/* Judul + kalimat pendukung */}
         <div className="flex flex-col justify-center space-y-6">
           <h2 className="text-2xl sm:text-3xl md:text-3xl text-gray-600">KONTAK</h2>
           <h3 className="text-4xl sm:text-5xl md:text-4xl lg:text-5xl font-black text-cyan-500">
@@ -37,7 +39,7 @@ const KontakPage = () => {
           </p>
         </div>
 
-        {/* Kanan: Form Kontak */}
+        {/* Form Kontak */}
         <div className="bg-white rounded-xl shadow-lg p-8">
           <form onSubmit={handleSubmit} className="flex flex-col space-y-4">
             <div>

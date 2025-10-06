@@ -4,7 +4,7 @@ import { Pagination } from "swiper/modules";
 import "swiper/css";
 import "swiper/css/pagination";
 
-import artikelData from "../data/artikelData"; // data artikel
+import artikelData from "../data/artikelData";
 
 const ArtikelPage = () => {
   return (
@@ -20,7 +20,8 @@ const ArtikelPage = () => {
 
         {/* Konten Video + Artikel */}
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8 overflow-hidden">
-          {/* Kiri: Video + ringkasan */}
+          
+          {/* Video + ringkasan */}
           <div className="bg-white rounded-lg shadow p-6 flex flex-col space-y-4">
             <div className="aspect-video w-full rounded-lg overflow-hidden shadow-lg">
               <iframe
@@ -37,16 +38,16 @@ const ArtikelPage = () => {
             </p>
           </div>
 
-          {/* Kanan: Artikel dalam Swiper */}
+          {/* Artikel dalam Swiper */}
           <div className="bg-white rounded-lg shadow p-6 overflow-hidden">
             <Swiper
               modules={[Pagination]}
               pagination={{ clickable: true }}
               spaceBetween={20}
               breakpoints={{
-                320: { slidesPerView: 1 },   // sm: 1 kolom
-                768: { slidesPerView: 2 },   // md: 2 kolom
-                1024: { slidesPerView: 3 },  // lg: 3 kolom
+                320: { slidesPerView: 1 },   
+                768: { slidesPerView: 2 },   
+                1024: { slidesPerView: 3 },  
               }}
               className="overflow-hidden"
             >
@@ -72,7 +73,7 @@ const ArtikelPage = () => {
           </div>
         </div>
 
-        {/* Section Quote */}
+        {/* Quote */}
         <div className="bg-white rounded-lg shadow p-6 text-center">
           <p className="text-gray-700 text-lg md:text-xl italic">
             "Genius is 1% inspiration and 99% perspiration." — Thomas Alva Edison

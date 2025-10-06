@@ -5,7 +5,7 @@ const JadwalGuruPage = () => {
   const [flipped, setFlipped] = useState({});
 
   const toggleFlip = (id) => {
-    // hanya satu card terbuka
+    
     setFlipped((prev) => {
       const newState = {};
       newState[id] = !prev[id];
@@ -16,6 +16,7 @@ const JadwalGuruPage = () => {
   return (
     <div className="bg-gray-50 min-h-screen flex flex-col items-center px-6 py-12 space-y-10">
       <div className="max-w-6xl w-full flex flex-col lg:flex-row gap-10">
+
         {/* Section Kiri */}
         <div className="lg:w-1/3 flex flex-col space-y-6 bg-white p-6 rounded-lg shadow">
           <h2 className="text-2xl sm:text-3xl md:text-3xl text-gray-600">JADWAL</h2>
@@ -40,6 +41,7 @@ const JadwalGuruPage = () => {
               >
                 {/* Front */}
                 <div className="absolute inset-0 rounded-2xl shadow-lg backface-hidden overflow-hidden">
+                  
                   {/* Foto Guru */}
                   <img
                     src={guru.foto}

@@ -10,6 +10,7 @@ const TestimoniPage = () => {
   return (
     <div className="bg-gray-50 min-h-screen flex flex-col items-center px-6 py-12 space-y-8">
       <div className="max-w-6xl w-full flex flex-col space-y-6">
+
         {/* Judul */}
         <div className="bg-white rounded-lg shadow p-6 text-center">
           <h2 className="text-2xl sm:text-3xl md:text-3xl text-gray-600">TESTIMONI</h2>
@@ -26,9 +27,9 @@ const TestimoniPage = () => {
             pagination={{ clickable: true }}
             spaceBetween={20}
             breakpoints={{
-              320: { slidesPerView: 1 },   // sm: 1 kolom
-              768: { slidesPerView: 2 },   // md: 2 kolom
-              1024: { slidesPerView: 3 },  // lg: 3 kolom
+              320: { slidesPerView: 1 },   
+              768: { slidesPerView: 2 },   
+              1024: { slidesPerView: 3 },  
             }}
           >
             {testimoniData.map((testimoni) => (
@@ -49,7 +50,7 @@ const TestimoniPage = () => {
           </Swiper>
         </div>
 
-        {/* Section Kutipan Hadits */}
+        {/* Kutipan Hadits */}
         <div className="bg-white rounded-lg shadow p-6 text-center">
           <p className="text-gray-700 text-lg md:text-xl italic mb-2">
             “Menuntut ilmu itu wajib bagi setiap Muslim.”  

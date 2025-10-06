@@ -35,7 +35,7 @@ const HomePage = () => {
             </button>
           </div>
 
-          {/* Hamburger Button (Mobile) */}
+          {/* Hamburger Button */}
           <button
             className="md:hidden p-2 rounded-lg text-gray-700 hover:bg-gray-100"
             onClick={() => setIsOpen(true)}
@@ -83,7 +83,7 @@ const HomePage = () => {
           />
         )}
 
-        {/* Main Content / Hero */}
+        {/* Main Content */}
         <div className="flex flex-col md:flex-row items-center bg-white rounded-3xl shadow-xl overflow-hidden w-full">
           {/* Left Text */}
           <div className="md:w-1/2 flex flex-col justify-center p-6 sm:p-10 md:p-12 lg:p-16 space-y-6">
@@ -105,7 +105,7 @@ const HomePage = () => {
           {/* Right Image */}
           <div className="md:w-1/2 flex items-center justify-center p-6 sm:p-8 md:p-10 lg:p-12">
             <img
-              src="/public/lab.png"
+              src="/lab.png"
               alt="lab"
               loading="lazy"
               className="object-cover max-w-full h-auto rounded-2xl shadow-2xl"

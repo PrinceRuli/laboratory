@@ -1,11 +1,11 @@
 @import "tailwindcss";
-/* index.css */
+
 html, body {
   @apply overflow-x-hidden;
 }
 
 
-/* src/index.css */
+
 .perspective {
   perspective: 1000px;
 }
