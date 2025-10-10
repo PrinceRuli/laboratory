@@ -122,7 +122,7 @@ const KontakPage = () => {
                 SMA Muhammadiyah 3 Jakarta
               </h4>
               <p className="text-gray-600 text-sm">
-                Jl. Kramat Raya No. 49, Jakarta Pusat, Indonesia
+                Jl. Limau I No. 3, Kramat Pela - Kebayoran Baru, Jakarta Selatan.
               </p>
               <p className="text-gray-600 text-sm">Telp: (021) 123-4567</p>
             </div>
